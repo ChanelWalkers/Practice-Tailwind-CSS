@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Modal</title>
+</head>
+
+<body>
+    <!-- BACKGROUND -->
+    <div class="flex justify-center items-center min-h-screen bg-[#FFF1F2]">
+        <!-- MODAL CONTAINER -->
+        <div class="flex bg-white flex-col md:flex-row rounded-xl shadow-2xl">
+            <div class="flex flex-col p-[80px]">
+                <div class="font-serif text-2xl font-bold tracking-wide mb-[20px]">Log In</div>
+                <p class="max-w-sm font-normal text-gray-600 mb-[48px]">
+                    Log in to your account to upload or download pictures, video or music.
+                </p>
+
+                <input class="border border-gray-200 p-[24px] mb-[24px]" type="text" name="" id=""
+                    placeholder="Enter your email address">
+                <div class="flex mb-[48px] flex-col md:flex-row space-y-3 md:space-y-0 items-center justify-between">
+                    <div class="text-lg text-[#26829B]">Forgot password</div>
+                    <div class="group">
+                        <button
+                            class="rounded bg-[#26829B] text-white group-hover:-translate-y-0.5 duration-200 group-hover:bg-cyan-700 shadow-sm">
+                            <div class="py-[24px] px-[36px] flex space-x-3">
+                                <div>
+                                    Next
+                                </div>
+                                <div>
+                                    &#x1F862;
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex border-t-2 border-gray-200 py-[24px] justify-center">
+                    <p class="text-xs text-gray-400 font-normal">
+                        or log in with
+                    </p>
+                </div>
+                <div
+                    class="flex flex-col space-x-0 items-center justify-center md:flex-row md:space-y-0 md:space-x-3 space-y-3">
+                    <button class="flex justify-center items-center py-[8px] 
+                        md:w-1/2 space-x-3 border hover:shadow-lg 
+                        hover:-translate-y-0.5 duration-200">
+                        <img src="./images/facebook.png" alt="facebook" class="w-9">
+                        <span>Facebook</span>
+                    </button>
+                    <button class="flex justify-center items-center 
+                        py-[8px] md:w-1/2 space-x-3 border hover:shadow-lg 
+                        hover:-translate-y-0.5 duration-200">
+                        <img src="./images/google.png" alt="google" class="w-9">
+                        <span>Google</span>
+                    </button>
+                </div>
+            </div>
+            <img src="./images/image.jpg" class="w-[430px] md:block hidden" alt="bookmark">
+        </div>
+    </div>
+</body>
+
+</html>
